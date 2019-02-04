@@ -13,5 +13,5 @@
 # SOLUTION
 
 def double_char(str)
- str.chars.map{|e|e *2}.join
+  str.chars.map{|e|e *2}.join
 end

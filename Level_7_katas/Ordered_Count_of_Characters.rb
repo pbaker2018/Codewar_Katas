@@ -10,20 +10,20 @@
 # SOLUTION
 
 def ordered_count(string)
-new_array = string.chars.uniq
+  new_array = string.chars.uniq
 
-intital_array = string.chars
+  intital_array = string.chars
 
-occurences = new_array.map{|e|intital_array.count(e)}
+  occurences = new_array.map{|e|intital_array.count(e)}
 
-ordered_count = []
+  ordered_count = []
 
-num = new_array.length
+  num = new_array.length
 
-counter = 0
-until counter == num
-ordered_count << new_array[counter] << occurences[counter]
-counter += 1
-end
-ordered_count.each_slice(2).to_a
+  counter = 0
+  until counter == num
+    ordered_count << new_array[counter] << occurences[counter]
+    counter += 1
+  end
+  ordered_count.each_slice(2).to_a
 end
